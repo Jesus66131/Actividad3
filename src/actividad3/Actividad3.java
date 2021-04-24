@@ -7,6 +7,7 @@ public class Actividad3 {
     public static Scanner ent = new Scanner(System.in);
 
     public static void suma(){
+        System.out.println("◈◈◈◈◈◈◈◈◈◈◈◈◈SUMA◈◈◈◈◈◈◈◈◈◈◈◈◈◈\n");
         int suma = 0;
         for(int i = 0; i <=10; i++){
             suma +=i;
@@ -16,6 +17,7 @@ public class Actividad3 {
     }
     
     public static void factorial(){
+        System.out.println("◈◈◈◈◈◈◈◈◈FACTORIAL DE 10◈◈◈◈◈◈◈◈◈◈\n");
         int factor = 1;
         for (int i = 1; i <= 10; i++) {
             factor *=i;  
@@ -23,6 +25,7 @@ public class Actividad3 {
         System.out.println("El factorial de 10 es " + factor);
     }
     public static void factorialUsuario(){
+        System.out.println("◈◈◈◈◈◈◈◈◈◈◈FACTORIAL◈◈◈◈◈◈◈◈◈◈◈◈\n");
         int factor = 1, numero = 0;
         System.out.println("Ingrese el numero a calcular su factorial");
         numero = ent.nextInt();
@@ -32,6 +35,7 @@ public class Actividad3 {
         System.out.println("El factorial de "+ numero + " es " + factor);
     }
     public static void media(){
+        System.out.println("◈◈◈◈◈◈◈◈◈PROMEDIO DE 0 A n◈◈◈◈◈◈◈◈◈\n");
         double suma = 0, media = 0;
         int num = 0;
         
@@ -45,6 +49,7 @@ public class Actividad3 {
         System.out.println("La media de la suma consecutiva es " + media);
     }
     public static void mediaNum(){
+        System.out.println("◈◈◈◈◈◈◈◈◈◈◈◈PROMEDIO◈◈◈◈◈◈◈◈◈◈◈◈\n");
         double num = 0, suma = 0, media = 0, min = 0, max = 0;
         int cant = 0;
         System.out.println("Ingrese la cantidad de numeros a promediar");
@@ -70,14 +75,15 @@ public class Actividad3 {
         System.out.println("El menor numero introducido es " + min);
         System.out.println("Y la distancia entre estos es " + (max-min));
     }
-    public static void semana(){
+    public static void semana(){  
+        System.out.println("◈◈◈◈◈◈◈◈◈◈◈◈◈SEMANA◈◈◈◈◈◈◈◈◈◈◈◈◈\n");
         String[] dias = {"Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"};
-        
         for(int i = 1; i <= 7; i++){
             System.out.println(i + "- " +dias[i-1]);
         }
     }
     public static void gato(){
+        System.out.println("◈◈◈◈◈◈◈◈◈◈◈MODELO GATO◈◈◈◈◈◈◈◈◈◈◈\n");
         String [][] lugares  = {{"0,0", "0,1", "0,2"},{"1,0", "1,1", "1,2"},{"2,0", "2,1", "2,2"}}; 
         for(int i = 0; i <= 2; i++){
             for(int j = 0; j <= 2; j++){
@@ -90,7 +96,7 @@ public class Actividad3 {
         }
     }
     public static void selec(int resp){
-        
+        System.out.println("◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈");
         switch(resp){
             case 1:
                 suma();
@@ -115,12 +121,17 @@ public class Actividad3 {
                 break;
             
         }
+        System.out.println("◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈");
     }
+    
     public static void main(String[] args) {
         int resp = 0;
-        System.out.println("Ingrese el método a ejecutar \n1- Suma del 0 al 10 \n2- Factorial de 10 \n3- Factorial de cualquier numero \n4- Promedio del 0 hasta un número dado \n5- Promedio de numeros ingresados \n6- Dias de la Semana \n7- Modelo del juego de Gato");
-        System.out.print("Esperando respuesta: ");
+        System.out.println("=========================================\n===============ACTIVIDAD 3===============\n==============JESUS ZAPATA===============");
+        System.out.println("〖Ingrese el método a ejecutar           〗\n〖1- Suma del 0 al 10                    〗\n〖2- Factorial de 10                     〗\n〖3- Factorial de cualquier numero       〗\n〖4- Promedio del 0 hasta un número dado 〗\n〖5- Promedio de numeros ingresados      〗\n〖6- Dias de la Semana                   〗\n〖7- Modelo del juego de Gato            〗");
+        System.out.print("Esperando respuesta:");
         resp = ent.nextInt();
+        
+        
         selec(resp);
         
         
